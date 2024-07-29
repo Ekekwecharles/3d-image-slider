@@ -100,6 +100,7 @@ button {
   border: none;
   cursor: pointer;
   border: 2px solid #f2cc8f;
+  touch-action: manipulation;
 }
 
 .btn {
@@ -125,9 +126,9 @@ button {
     display: block;
   }
 
-  .banner .content {
+  /* .banner .content {
     padding-bottom: 100px;
-  }
+  } */
 }
 
 @media (pointer: fine) {
