@@ -28,7 +28,7 @@
   top: 20%;
   left: calc(50% - 75px);
   transform-style: preserve-3d;
-  transform: perspective(1500px);
+  /* transform: perspective(1500px); */
   animation: autoRun 20s linear infinite;
   z-index: 2;
 }
@@ -64,7 +64,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(1400px, 100vw);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   /* color: #25283b; */
   color: #f2cc8f;
   font-family: "Alfa Slab One", serif;
@@ -92,4 +92,46 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: top center;
+  display: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border: 2px solid #f2cc8f;
+}
+
+.btn {
+  position: absolute;
+  top: calc(20% + 250px + 150px);
+  right: 10%;
+  z-index: 3;
+}
+
+.btn svg {
+  height: 3rem;
+  background: none;
+  fill: white;
+  cursor: pointer;
+}
+
+.btn button:nth-child(2) {
+  margin-left: 10px;
+}
+
+@media (pointer: coarse) {
+  .btn {
+    display: block;
+  }
+
+  .banner .content {
+    padding-bottom: 100px;
+  }
+}
+
+@media (pointer: fine) {
+  .btn {
+    display: none;
+  }
 }
